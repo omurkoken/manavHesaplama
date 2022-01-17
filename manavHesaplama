@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double armut=2.14,elma=3.67,dometes=1.11,muz=0.95,patlican=5.0;
+        double armutkg,elmakg,domateskg,muzkg,patlicankg,toplamTutar;
+
+        Scanner deger=new Scanner(System.in);
+
+        System.out.print("Kaç Kilo Armut: ");
+        armutkg=deger.nextInt();
+        armutkg=(armut*armutkg);
+        System.out.println("armut toplamı: " +armutkg);
+
+        System.out.print("Kaç Kilo Elma: ");
+        elmakg=deger.nextInt();
+        elmakg=(elma*elmakg);
+        System.out.println("Elma toplamı: "+elmakg);
+
+        System.out.print("Kaç Kilo Dometes: ");
+        domateskg=deger.nextInt();
+        domateskg=(dometes*domateskg);
+        System.out.println("domates toplamı: "+domateskg);
+
+        System.out.print("Kaç Kilo Muz: ");
+        muzkg=deger.nextInt();
+        muzkg=(muz*muzkg);
+        System.out.println("muz toplamı: "+muzkg);
+
+        System.out.print("Kaç Kilo Patlıcan: ");
+        patlicankg=deger.nextInt();
+        patlicankg=(patlican*patlicankg);
+        System.out.println("patlican toplamı: "+patlicankg );
+
+        toplamTutar=(elmakg+armutkg+domateskg+muzkg+patlicankg);
+        System.out.println("toplam Tutar" +toplamTutar);
+
+        String butce=(toplamTutar>99)?"bütçeyi aşıyorsun ": "biraz daha alışverişe ne dersin";
+        System.out.println(butce);
+    }
+
+}
